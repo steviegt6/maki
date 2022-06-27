@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Maki',
+  tagline: '',
+  url: 'https://maki.tomat.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'steviegt6', // Usually your GitHub org/user name.
+  projectName: 'maki', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -56,23 +56,34 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false
+      },
+      announcementBar: {
+        id: 'support_and_translations',
+        content: '❤️ Like these docs and the work I do? Show your support <a href="/docs/meta/support">here</a>. // Want to help translate? See how <a href="/docs/meta/translating">here</a>. 🌐',
+        backgroundColor: '#2e2e2e',
+        textColor: '#ffffff',
+      },
       navbar: {
-        title: 'My Site',
+        title: 'Maki',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'My Discord Profile Picture Because I Believe That Is Neat',
+          src: 'img/tomat.png',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Ramblings (Blog)', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/steviegt6/maki',
+            label: 'Edit on GitHub',
             position: 'right',
           },
         ],
@@ -81,46 +92,71 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Directories',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Docs',
+                to: '/docs/',
               },
+              {
+                label: "Ramblings (Blog)",
+                to: '/blog',
+              }
             ],
           },
           {
-            title: 'Community',
+            title: 'Find Me',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Personal Site',
+                href: 'https://tomat.dev/',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.tomat.dev/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/steviegt6/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Support me',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Patreon',
+                href: 'https://www.patreon.com/tomatophile',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
+                label: 'Ko-fi',
+                href: 'https://ko-fi.com/tomatophile',
+              }
+            ]
           },
+          {
+            title: 'tModLoader',
+            items: [
+              {
+                label: 'tML Discord',
+                href: 'https://tmodloader.net/discord',
+              },
+              {
+                label: 'tML GitHub',
+                href: 'https://github.com/tModLoader/tModLoader',
+              },
+              {
+                label: 'tML Wiki',
+                href: 'https://github.com/tModLoader/tModLoader/wiki',
+              },
+              {
+                label: 'tML Docs',
+                href: 'https://tmodloader.github.io/tModLoader/html/index.html'
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Tomat`,
       },
       prism: {
         theme: lightCodeTheme,
