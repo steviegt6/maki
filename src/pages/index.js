@@ -15,17 +15,20 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs"
-          >
-            📜 General Docs
+          <Link className="button button--secondary button--lg homepage-button" to="/docs">
+            📜 General Documentation
           </Link>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg homepage-button"
             to="/docs/tmodloader"
           >
-            🌳 tModLoader Docs
+            🌳 tModLoader Documentation
+          </Link>
+          <Link
+            className="button button--secondary button--lg homepage-button"
+            to="/docs/meta"
+          >
+            ⚙️ Meta Documentation
           </Link>
         </div>
       </div>

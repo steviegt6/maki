@@ -95,8 +95,16 @@ const config = {
             title: 'Directories',
             items: [
               {
-                label: 'Docs',
+                label: 'Docs Homepage',
                 to: '/docs/',
+              },
+              {
+                label: 'Terraria/tModLoader Docs',
+                to: '/docs/tmodloader/',
+              },
+              {
+                label: 'Meta Docs',
+                to: '/docs/meta/',
               },
               {
                 label: "Ramblings (Blog)",
@@ -156,7 +164,6 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Tomat`,
       },
       prism: {
         theme: lightCodeTheme,

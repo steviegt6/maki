@@ -1,11 +1,52 @@
-import React from 'react';
-export default function FooterCopyright({copyright}) {
+import React from "react";
+export default function FooterCopyright() {
+  return <CopyrightContents />;
+}
+
+function CopyrightContents() {
   return (
-    <div
-      className="footer__copyright"
-      // Developer provided the HTML, so assume it's safe.
-      // eslint-disable-next-line react/no-danger
-      // dangerouslySetInnerHTML={{__html: copyright}}
-    >{copyright} <span className="footer__separator">//</span> Built with <a href="https://docusaurus.io/" className="footer__docusaurus">Docusaurus</a>.</div>
+    <div>
+      <CopyrightBody /> <Separator /> <DocusaursBody />
+    </div>
+  );
+}
+
+function CopyrightLine() {
+  return `Copyright © ${new Date().getFullYear()}`;
+}
+
+function NameLink() {
+  return (
+    <a href="https://tomat.dev/" className="footer__name">
+      Tomat
+    </a>
+  );
+}
+
+function CopyrightBody() {
+  return (
+    <>
+      <CopyrightLine /> <NameLink />
+    </>
+  );
+}
+
+function Separator() {
+  return <span className="footer__separator">//</span>;
+}
+
+function DocusaurusLink() {
+  return (
+    <a href="https://docusaurus.io/" className="footer__docusaurus">
+      Docusaurus
+    </a>
+  );
+}
+
+function DocusaursBody() {
+  return (
+    <>
+      Built with <DocusaurusLink />.
+    </>
   );
 }

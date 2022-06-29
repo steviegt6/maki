@@ -10,11 +10,16 @@
   --ifm-color-primary-dark: #df5959; /*#29784c;*/
   --ifm-color-primary-darker: #b13939; /*#277148;*/
   --ifm-color-primary-darkest: #a13030; /*#205d3b;*/
-  --ifm-color-primary-light: #FF9696; /*#33925d;*/
+  --ifm-color-primary-light: #ff9696; /*#33925d;*/
   --ifm-color-primary-lighter: #fc9f9f; /*#359962;*/
   --ifm-color-primary-lightest: #faa9a9; /*#3cad6e;*/
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); /*rgba(0, 0, 0, 0.1);*/
+  --docusaurus-highlighted-code-line-bg: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /*rgba(0, 0, 0, 0.1);*/
 }
 
 .footer {
@@ -33,4 +38,26 @@
 
 .hero__title {
   color: white !important;
+}
+
+.buttons_src-pages-index-module {
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 350px !important;
+  margin: auto;
+}
+
+.homepage-button {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.footer__title {
+  letter-spacing: inherit;
+  transition: letter-spacing 0.5s ease-in-out;
+}
+
+.footer__title:hover {
+  letter-spacing: 1px;
 }

@@ -23,6 +23,6 @@
 }
 
 .buton {
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
 }
