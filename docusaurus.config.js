@@ -82,9 +82,24 @@ const config = {
           },
           {to: '/blog', label: 'Ramblings (Blog)', position: 'left'},
           {
-            href: 'https://github.com/steviegt6/maki',
-            label: 'Edit on GitHub',
+            type: 'localeDropdown',
             position: 'right',
+            dropdownItemsAfter: [
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                href: '/docs/meta/translating',
+                label: 'Help Us Translate',
+              }
+            ]
+          },
+          {
+            href: 'https://github.com/steviegt6/maki',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub Repository'
           },
         ],
       },
