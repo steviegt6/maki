@@ -40,6 +40,12 @@
   color: white !important;
 }
 
+.hero__subtitle {
+  color: white;
+  font-style: italic;
+  margin-top: -28px;
+}
+
 .buttons_src-pages-index-module {
   flex-direction: column !important;
   align-items: center !important;
