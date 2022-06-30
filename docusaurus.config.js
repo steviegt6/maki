@@ -105,6 +105,7 @@ const config = {
       },
       footer: {
         style: 'dark',
+        copyright: "filler (unused, I swizzle'd the hell out of this guy)",
         links: [
           {
             title: 'Directories',
