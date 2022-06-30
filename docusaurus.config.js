@@ -91,7 +91,7 @@ const config = {
               },
               {
                 href: '/docs/meta/translating',
-                label: 'Help Us Translate',
+                label: 'Contribute Translations',
               }
             ]
           },
