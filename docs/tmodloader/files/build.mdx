@@ -1,0 +1,69 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import BuildTable from "../../../src/components/mdx/BuildTable";
+
+# Mod Build Manifest File Documentation
+
+:::info
+
+The `build.txt` file has been around for quite some time, but may be reaching its end-of-life shortly (see: [TML-2472](https://github.com/tModLoader/tModLoader/pull/2472)).
+
+:::
+
+The Mod Build Manifest file format is used for defining mod properties (mostly build properties). The `build.txt` file laying in the root folder of your mod is the only file that uses this format.
+
+## Early History
+
+Recorded below is a brief history of data before the `build.txt` file was introduced, and how it worked when it was first introduced.
+
+### v0.1.0
+
+Prior to a manifest file, the [`Terraria.ModLoader.Mod`](/docs/tmodloader/asm/terraria/modloader/mod) class had a `Name`, `Version`, and `Author` property (all of which being `string`s).
+
+### v0.3.0
+
+Instead of managing values in your mod's main class, `build.txt` was added with only five fields:
+
+- `dllReferences`
+- `modReferences`
+- `author`
+- `version`
+- `displayName`
+
+It was very primitive in its original conception; little has changed regarding how data is loaded, and it has pretty much only grown since v0.3.0.
+
+## File Format
+
+Mod Build Manifest files use properties represented as key-value pairs. Keys are the property names, and values are strings of text. There are several property types:
+
+- `single`, a single value, represented as `yourKey = your value here`.
+- `boolean`, a `single` which evaluates to `true` if the value is "`true`" (case-insensitive), otherwise evauluates to "`false`". Represented as `yourKey = true` (and `yourKey = false` or anything else not case-insensitively equal to `true`).
+- `version`, a `single` value which has two to four "elements". Each "element" must be a positive integer that can go up to [`int.MaxValue`](https://docs.microsoft.com/en-us/dotnet/api/system.int32.maxvalue?view=net-6.0). Represented as `x.x`, `x.x.x`, or `x.x.x.x`. Each "element" is separated by a period (`.`). Represented as `yourKey = 1.2.3.4` (or any aforementioned variation).
+- `side`, represents a [`Terraria.ModLoader.ModSide], can only be `Both`, `Client`, `Server`, or `NoSync`. Represented as `yourKey = SideGoesHere` (`yourKey = Both`, `yourKey = Client`, `yourKey = Server`, `yourKey = NoSync`).
+- `array`, an array of elements. Elements are separated using a comma (`,`), and any element may have trailing spaces (` `) as they are trimmed after being split. Represented as `yourKey = element1, element2, element3, ...`.
+
+Every key is case-sensitive, but keys just need their expected value.
+
+<Tabs>
+  <TabItem value="v0.8.3.1" label="v0.8.3.1+ (Latest)">
+    <BuildTable version={6} />
+  </TabItem>
+    <TabItem value="v0.8.1.1" label="v0.8.1.1">
+    <BuildTable version={5} />
+  </TabItem>
+    <TabItem value="v0.8.0" label="v0.8.0">
+    <BuildTable version={4} />
+  </TabItem>
+    <TabItem value="v0.7.1" label="v0.7.1">
+    <BuildTable version={3} />
+  </TabItem>
+  <TabItem value="v0.7.0" label="v0.7.0">
+    <BuildTable version={2} />
+  </TabItem>
+  <TabItem value="v0.6.0" label="v0.6.0">
+    <BuildTable version={1} />
+  </TabItem>
+  <TabItem value="v0.3.0" label="v0.3.0">
+    <BuildTable version={0} />
+  </TabItem>
+</Tabs>

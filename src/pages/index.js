@@ -16,7 +16,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <Subtitle />
-        <div className={styles.buttons}>
+        <div className={styles.buttons + " hero__buttons"}>
           <Link className="button button--secondary button--lg homepage-button" to="/docs">
             📜 General Documentation
           </Link>
@@ -39,7 +39,7 @@ function HomepageHeader() {
 }
 
 function Subtitle() {
-  const [subtitle, setSubtitle] = useState("");
+  const [subtitle, setSubtitle] = useState(["", ""]);
 
   useEffect(() => {
     if (typeof window === 'undefined') {
@@ -49,9 +49,10 @@ function Subtitle() {
 
     const randomIndex = Math.floor(Math.random() * quotes.length);
     setSubtitle(quotes[randomIndex]);
+    console.log('test');
   });
 
-  return <p className="hero__subtitle">&quot;{subtitle}&quot;</p>;
+  return <p className="hero__subtitle">&quot;{subtitle[0]}&quot; — {subtitle[1]}</p>;
 }
 
 export default function Home() {

@@ -46,7 +46,7 @@
   margin-bottom: 0px;
 }
 
-.buttons_src-pages-index-module {
+.hero__buttons {
   flex-direction: column !important;
   align-items: center !important;
   width: 350px !important;
