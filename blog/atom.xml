@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://maki.tomat.dev/blog</id>
+    <title>Maki Blog</title>
+    <updated>2022-06-27T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://maki.tomat.dev/blog"/>
+    <subtitle>Maki Blog</subtitle>
+    <icon>https://maki.tomat.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Starting Wiki Work]]></title>
+        <id>starting-wiki-work</id>
+        <link href="https://maki.tomat.dev/blog/starting-wiki-work"/>
+        <updated>2022-06-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today is the day I have decided to start working on this wiki. While a long road waits ahead and I am sure I will only be working on this periodically, I hope it benefits many.]]></summary>
+        <content type="html"><![CDATA[<p>Today is the day I have decided to start working on this wiki. While a long road waits ahead and I am sure I will only be working on this periodically, I hope it benefits many.</p><p>I hope that I'll be able to document various tools I create/use and write guides for things I use quite often. I am not sure how "professional" I want anything to be (we'll all have to see later).</p><p>Ideally, I can get started on documenting the internals of tModLoader (and Terraria by extension) to make things easier for modders. Writing an assortment of guides, tutorials, and detailed pages explaining various inner-workings of the game and codebase would be wonderful.</p><p>I've been itching to write up some tutorials and explanations for IL editing and method detouring using <a href="https://github.com/MonoMod/MonoMod" target="_blank" rel="noopener noreferrer">MonoMod</a> as well.</p>]]></content>
+        <author>
+            <name>Tomat</name>
+            <uri>https://github.com/steviegt6</uri>
+        </author>
+        <category label="wiki" term="wiki"/>
+    </entry>
+</feed>

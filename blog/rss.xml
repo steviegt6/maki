@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Maki Blog</title>
+        <link>https://maki.tomat.dev/blog</link>
+        <description>Maki Blog</description>
+        <lastBuildDate>Mon, 27 Jun 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Starting Wiki Work]]></title>
+            <link>https://maki.tomat.dev/blog/starting-wiki-work</link>
+            <guid>starting-wiki-work</guid>
+            <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Today is the day I have decided to start working on this wiki. While a long road waits ahead and I am sure I will only be working on this periodically, I hope it benefits many.]]></description>
+            <content:encoded><![CDATA[<p>Today is the day I have decided to start working on this wiki. While a long road waits ahead and I am sure I will only be working on this periodically, I hope it benefits many.</p><p>I hope that I'll be able to document various tools I create/use and write guides for things I use quite often. I am not sure how "professional" I want anything to be (we'll all have to see later).</p><p>Ideally, I can get started on documenting the internals of tModLoader (and Terraria by extension) to make things easier for modders. Writing an assortment of guides, tutorials, and detailed pages explaining various inner-workings of the game and codebase would be wonderful.</p><p>I've been itching to write up some tutorials and explanations for IL editing and method detouring using <a href="https://github.com/MonoMod/MonoMod" target="_blank" rel="noopener noreferrer">MonoMod</a> as well.</p>]]></content:encoded>
+            <category>wiki</category>
+        </item>
+    </channel>
+</rss>

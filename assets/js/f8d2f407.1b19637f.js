@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmaki=self.webpackChunkmaki||[]).push([[598],{2781:a=>{a.exports=JSON.parse('{"label":"wiki","permalink":"/blog/tags/wiki","allTagsPath":"/blog/tags","count":1}')}}]);
